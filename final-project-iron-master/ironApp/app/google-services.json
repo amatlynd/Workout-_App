@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "208978703650",
+    "firebase_url": "https://projiron-7bbac.firebaseio.com",
+    "project_id": "projiron-7bbac",
+    "storage_bucket": "projiron-7bbac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208978703650:android:495b42338ebf9b83",
+        "android_client_info": {
+          "package_name": "com.csc301.project.iron"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208978703650-7i91e0mgtj8ija2d08b3vd0j0s4kagbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.csc301.project.iron",
+            "certificate_hash": "3ba4e4972fed489b17c6f9131e2009753b438608"
+          }
+        },
+        {
+          "client_id": "208978703650-t9fn6tc3afkrtlmhd62f4js5oodecim4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9NfUjGWcim3kfe99F6OapgztuxvhsYzU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208978703650-t9fn6tc3afkrtlmhd62f4js5oodecim4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

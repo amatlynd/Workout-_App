@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Workouts"
+            android:icon="@drawable/ic_folder_black_24dp"
+            android:title="Workouts" />
+
+        <item
+            android:id="@+id/History"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="History" />
+
+        <item
+            android:id="@+id/Logout"
+            android:icon="@drawable/ic_settings_power_black_24dp"
+            android:title="Logout" />
+
+    </group>
+
+
+</menu>
+

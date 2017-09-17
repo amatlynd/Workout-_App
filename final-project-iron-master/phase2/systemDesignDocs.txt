@@ -1,0 +1,49 @@
+SystemDesignDocs
+
+LoginManager:
+// this holds the different options the user can choose, from both login pages. We pass this through APIs to do condition checks
+ENUM = {FB, GOOGLE, CUSTOM}
+
+Objects:
+AuthenticationClient
+RegisterClient
+UserObj = new User(getEmail(), getPassword())
+
+Methods:
+// from the login page when the user clicks FB or Google login. Assume they are existing users now, if not will prompt to register later
+signIn()
+// from the create account page, goes straight to register api
+createAccount()
+
+from signIn() do AuthenticationClient.authenticate(ENUM_CHOSEN, userObj)
+from createAccount() do RegisterClient.register(ENUM_CHOSEN, userObj)
+
+try catch all this or throw, we may catch exceptions from other apis like "user already exists" from registration api. This gets displayed on the screen, maybe similar to how validation is
+
+AuthenticationAPI:
+Objects:
+RegisterClient
+methods:
+authenticate(ENUM_CHOSEN, userObj):
+	- read firebase check if exists read(userObj.getEmail())
+	if exists then move on, change view
+	if not RegisterClient.register(ENUM_CHOSEN, userObj)
+
+	
+
+
+RegistrationAPI:
+Objects:
+methods:
+register(ENUM_CHOSEN, userObj)
+	- if fb enum go to fb create page to confirm
+	- if google enum go to google create page to confirm
+	- custom login goes straight to register
+
+	- writes user to database
+	- changes view to config
+fbRegisterPage()
+googleRegisterPage()
+
+	errrors:
+	user already exists
